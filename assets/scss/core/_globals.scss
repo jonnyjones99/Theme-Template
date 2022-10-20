@@ -1,0 +1,41 @@
+%query {
+	@include ltab {
+		// max-width: 1366px;
+		// margin: 0 auto;
+	}
+
+	@include desktop {
+		// max-width: 1280px;
+	}
+
+	@include pc {
+		// max-width: 1600px;
+	}
+}
+
+.query {
+	@extend %query;
+	// width: 100%;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: $regular;
+	width: 100%;
+	position: relative;
+}

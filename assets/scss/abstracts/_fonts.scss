@@ -1,0 +1,78 @@
+// ============================================================================= //
+// 									Font Face									 //
+// ============================================================================= //
+
+@mixin font-face(
+	$name,
+	$path,
+	$weight: null,
+	$style: null,
+	$exts: eot woff2 woff ttf svg
+) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_"),
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype",
+	);
+
+	@each $ext in $exts {
+		$extmod: if(
+			map-has-key($extmods, $ext),
+			$ext + map-get($extmods, $ext),
+			$ext
+		);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append(
+			$src,
+			url(quote($path + "." + $extmod)) format(quote($format)),
+			comma
+		);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face(
+	"OpenSans-Light",
+	"/wp-content/themes/jpl/assets/fonts/OpenSans-Light",
+	300,
+	normal,
+	ttf
+);
+@include font-face(
+	"OpenSans-Regular",
+	"/wp-content/themes/jpl/assets/fonts/OpenSans-Regular",
+	400,
+	normal,
+	ttf
+);
+@include font-face(
+	"OpenSans-Medium",
+	"/wp-content/themes/jpl/assets/fonts/OpenSans-Medium",
+	500,
+	normal,
+	ttf
+);
+@include font-face(
+	"OpenSans-Bold",
+	"/wp-content/themes/jpl/assets/fonts/OpenSans-Bold",
+	600,
+	normal,
+	ttf
+);
+
+$light: "OpenSans-Light", sans-serif;
+$regular: "OpenSans-Regular", sans-serif;
+$medium: "OpenSans-Medium", sans-serif;
+$bold: "OpenSans-Bold", sans-serif;
