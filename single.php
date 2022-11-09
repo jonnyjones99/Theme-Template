@@ -16,6 +16,21 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         </section>
 
 
+        <?php
+        // ACF repeater
+
+        /*
+        if (have_rows('repeater')) :
+            while (have_rows('repeater')) : the_row();
+                $field = get_sub_field('field_name');
+
+            endwhile;
+        else :
+        endif;
+        */
+        ?>
+
+
 <?php endwhile;
 endif;
 get_footer(); ?>

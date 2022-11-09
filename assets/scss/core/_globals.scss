@@ -15,7 +15,10 @@
 
 .query {
 	@extend %query;
-	// width: 100%;
+	width: min(100% - 4rem, 150ch);
+	margin-left: auto;
+	margin-right: auto;
+
 	position: relative;
 }
 

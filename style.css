@@ -1,13 +1,7 @@
 /*
 Theme Name: Theme Template
-Theme URI: https://therefinery.je/
-Author: The Refinery / Jonny Jones
-Author URI: https://therefinery.je/
+Theme URI: https://jonnyjones.dev/
+Author: Jonny Jones
+Author URI: https://jonnyjones.ddev/
 Version: 1.0
 */
-
-.query {
-	width: min(100% - 4rem, 150ch);
-	margin-left: auto;
-	margin-right: auto;
-}
