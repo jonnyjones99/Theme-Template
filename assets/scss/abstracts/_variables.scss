@@ -1,6 +1,38 @@
 :root {
+	// Colours
+	--clr-lightgreen: rgb(186, 211, 128);
+	--clr-darkgreen: rgb(5, 110, 57);
+	--clr-grey: rgb(152, 158, 166);
+	--clr-darkgrey: rgb(60, 55, 68);
+	--clr-lightgrey: rgba(60, 55, 68, 0.1);
+	--clr-green-transparent: rgba(5, 110, 57, 0.8);
 	--clr-white: #fff;
 	--clr-black: #000;
-	--clr-primary: #fff;
-	--clr-secondary: #fff;
+
+	// Font Sizes
+	--fs-xxl: 3rem;
+	--fs-xl: 2rem;
+	--fs-l: 1.75rem;
+	--fs-m: 1.5rem;
+	--fs-r: 1rem;
+	--fs-s: 0.8rem;
+	--fs-xs: 0.5rem;
+
+	// Spacing
+	--spacing-xxl: 6rem;
+	--spacing-xl: 4rem;
+	--spacing-l: 2rem;
+	--spacing-m: 1.5rem;
+	--spacing-r: 1rem;
+	--spacing-s: 0.75rem;
+	--spacing-xs: 0.5rem;
+	--spacing-xxs: 0.25rem;
+
+	// Animation
+	--animated-cubicBez: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+	--animated-150ms: 150ms;
+
+	// Swiper Tings
+	--swiper-navigation-size: 20px;
+	--swiper-navigation-color: var(--clr-white);
 }

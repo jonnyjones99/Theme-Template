@@ -1,25 +1,7 @@
-%query {
-	@include ltab {
-		// max-width: 1366px;
-		// margin: 0 auto;
-	}
-
-	@include desktop {
-		// max-width: 1280px;
-	}
-
-	@include pc {
-		// max-width: 1600px;
-	}
-}
-
 .query {
-	@extend %query;
-	width: min(100% - 4rem, 150ch);
+	width: min(100% - 4rem, 130ch);
 	margin-left: auto;
 	margin-right: auto;
-
-	position: relative;
 }
 
 * {
@@ -41,4 +23,21 @@ body {
 	font-family: $regular;
 	width: 100%;
 	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+footer {
+	flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion) {
+	* {
+		transition: 0 !important;
+	}
 }

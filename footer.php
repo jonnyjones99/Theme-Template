@@ -1,12 +1,11 @@
-<?php
-// End site wrapper
-?>
+</main>
 
 <footer>
 
+
+
 </footer>
 <?php wp_footer(); ?>
-
 
 
 </body>

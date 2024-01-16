@@ -1,18 +1,19 @@
 // Abstract files
-@import "/abstracts/fonts";
-@import "/abstracts/mixins";
-@import "/abstracts/variables";
-@import "/abstracts/reset";
+@import "./abstracts/fonts";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./abstracts/reset";
 
 // Core files
-@import "/core/typography";
-@import "/core/globals";
+@import "./core/typography";
+@import "./core/globals";
 
 // Components
-@import "/components/buttons";
+@import "./components/buttons";
 
 // Layout
-@import "/layouts/footer";
-@import "/layouts/header";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/four-o-four";
 
 // Sections

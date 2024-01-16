@@ -5,33 +5,41 @@ body {
 }
 
 p {
-	margin-bottom: 1rem;
+	margin-bottom: var(--spacing-r);
 }
 
 .title {
-	font-size: 3rem;
 	font-family: $bold;
+	font-size: clamp(1.6rem, 1.544rem + 0.3vw, 1.75rem);
+
+	&.title--no-margin {
+		margin-bottom: 0;
+	}
 }
 
 .subtitle {
-	font-size: 2rem;
+	font-size: var(--fs-s);
 	font-family: $bold;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+
+	&.subtitle--no-margin {
+		margin-bottom: 0;
+	}
 }
 
-// UTILITY CLASSES
+a {
+	transition: 150ms;
+	display: inline-block;
+	text-decoration: none;
 
-.clr--primary {
-	color: var(--clr-primary);
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
-.clr--secondary {
-	color: var(--clr-secondary);
-}
-
-.font--bold {
-	font-family: $bold;
-}
-
-.font--reg {
-	font-family: $reg;
+.link {
+	color: var(--clr-darkgreen);
+	text-decoration: none;
 }

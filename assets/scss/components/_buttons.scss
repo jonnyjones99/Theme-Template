@@ -1,9 +1,6 @@
 .btn--primary {
-	padding: 1rem 0.75rem;
+	display: block;
 	background-color: var(--clr-primary);
-	transition: 150ms;
-
-	&:hover {
-		opacity: 0.75;
-	}
+	padding: 1rem 2rem;
+	color: var(--clr-secondary);
 }
